@@ -1,3 +1,4 @@
+import { CommonModule } from "@angular/common";
 import { Component, OnInit, ChangeDetectionStrategy } from "@angular/core";
 
 @Component({
@@ -10,6 +11,8 @@ import { Component, OnInit, ChangeDetectionStrategy } from "@angular/core";
 			}
 		`,
 	],
+	standalone: true,
+	imports: [CommonModule],
 	changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ResponsiveGridComponent implements OnInit {
